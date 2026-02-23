@@ -21,4 +21,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy website to S3
-        run: aws s3 sync . s3://ci-cd-s3-bhavya --delete --exclude ".git/*" --exclude ".github/*"
+        run: aws s3 sync . s3://ci-cd-s3-bhavya --delete 
